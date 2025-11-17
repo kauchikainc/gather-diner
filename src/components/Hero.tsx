@@ -54,16 +54,12 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         <div className="mb-6 flex flex-col items-center">
           <img
             src="/images/logo.png"
-            alt="Gather DINER Logo"
+            alt="Gather Logo"
             className="h-32 md:h-40 w-auto mb-6"
           />
           <h1 className="text-6xl md:text-8xl mb-4 tracking-wider">
             <span className="inline-block text-[#ff0000] transform -rotate-2 drop-shadow-[6px_6px_0px_rgba(245,185,31,1)]" style={{ fontWeight: 900, textShadow: '6px 6px 0px #f5b91f' }}>
               Gather
-            </span>
-            <br />
-            <span className="inline-block text-[#f5b91f] transform -rotate-1 drop-shadow-[6px_6px_0px_rgba(88,198,202,1)]" style={{ fontWeight: 900, textShadow: '6px 6px 0px #58c6ca' }}>
-              DINER
             </span>
           </h1>
         </div>

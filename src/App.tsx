@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "./components/Header";
 import { HomePage } from "./components/HomePage";
 import { FullMenu } from "./components/FullMenu";
@@ -16,12 +17,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#fef6e4]">
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
-      
+
       {currentPage === 'home' && <HomePage onNavigate={handleNavigate} />}
       {currentPage === 'menu' && <FullMenu />}
       {currentPage === 'contact' && <ContactForm />}
 
       <Footer />
+      <Analytics />
     </div>
   );
 }

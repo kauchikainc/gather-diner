@@ -41,12 +41,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           >
             <img
               src="/images/logo.png"
-              alt="Gather DINER Logo"
+              alt="Gather Logo"
               className="h-12 w-auto"
             />
             <div className="text-2xl md:text-3xl">
               <span className="text-[#ff0000]" style={{ fontWeight: 900 }}>Gather</span>
-              <span className="text-[#f5b91f]" style={{ fontWeight: 900 }}> DINER</span>
             </div>
           </button>
 

@@ -22,9 +22,6 @@ export function Footer() {
               <span className="text-[#ff0000]" style={{ fontWeight: 900, textShadow: '3px 3px 0px #f5b91f' }}>
                 Gather
               </span>
-              <span className="text-[#f5b91f]" style={{ fontWeight: 900, textShadow: '3px 3px 0px #58c6ca' }}>
-                {' '}DINER
-              </span>
             </h3>
             <p className="text-black/70 mb-4 max-w-md" style={{ fontWeight: 500 }}>
               1985年から続く、本物のアメリカンドリームの味。クラシックな雰囲気と伝統的なレシピで、特別な体験をお届けします。
@@ -99,7 +96,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t-2 border-black/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-black/60 text-sm" style={{ fontWeight: 500 }}>
-            © 2025 Gather DINER. All rights reserved. Since 1985.
+            © 2025 Gather. All rights reserved. Since 1985.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-black/60 hover:text-[#ff0000] transition-colors" style={{ fontWeight: 500 }}>
