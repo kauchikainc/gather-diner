@@ -75,11 +75,6 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="text-black/70 hover:text-[#ff0000] transition-colors" style={{ fontWeight: 500 }}>
-                  私たちについて
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-black/70 hover:text-[#ff0000] transition-colors" style={{ fontWeight: 500 }}>
                   店舗情報
                 </a>
               </li>

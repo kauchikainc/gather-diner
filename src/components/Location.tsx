@@ -96,6 +96,7 @@ export function Location() {
                 SNS
               </h3>
               <div className="flex flex-col gap-3">
+                  <div>
                 <a
                   href="https://www.instagram.com/gather_1206/"
                   target="_blank"
@@ -104,10 +105,12 @@ export function Location() {
                   style={{ fontWeight: 700 }}
                 >
                   <div className="bg-[#ff0000] p-2 rounded-lg border-2 border-black">
-                    <Instagram className="w-5 h-5 text-white" />
+                    <Instagram className="w-4 h-4 text-white" />
                   </div>
                   @gather_1206
                 </a>
+                  </div>
+                  <div>
                 <a
                   href="https://www.tiktok.com/@gather_kushiro"
                   target="_blank"
@@ -116,10 +119,11 @@ export function Location() {
                   style={{ fontWeight: 700 }}
                 >
                   <div className="bg-[#f5b91f] p-2 rounded-lg border-2 border-black">
-                    <TikTokIcon className="w-5 h-5 text-white" />
+                    <TikTokIcon className="w-4 h-4 text-white" />
                   </div>
                   @gather_kushiro
                 </a>
+                  </div>
               </div>
             </div>
           </div>
