@@ -65,13 +65,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.label}
               </button>
             ))}
-            <a
-              href="tel:03-1234-5678"
-              className="px-6 py-2 bg-[#f5b91f] text-white rounded-full border-3 border-white shadow-lg hover:bg-[#e89548] transition-all transform hover:scale-105"
-              style={{ fontWeight: 700 }}
-            >
-              📞 03-1234-5678
-            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -103,13 +96,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.label}
               </button>
             ))}
-            <a
-              href="tel:03-1234-5678"
-              className="block w-full px-6 py-3 bg-[#f5b91f] text-white text-center rounded-lg border-3 border-white shadow-lg"
-              style={{ fontWeight: 700 }}
-            >
-              📞 03-1234-5678
-            </a>
           </nav>
         )}
       </div>

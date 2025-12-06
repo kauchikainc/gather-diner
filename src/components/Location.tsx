@@ -1,4 +1,20 @@
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Clock, Instagram } from "lucide-react";
+
+// TikTokアイコンコンポーネント
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+    </svg>
+  );
+}
 
 export function Location() {
   return (
@@ -41,38 +57,17 @@ export function Location() {
                     住所
                   </h3>
                   <p className="text-black/70" style={{ fontWeight: 500 }}>
-                    〒150-0001<br />
-                    東京都渋谷区神宮前1-2-3<br />
-                    サンセットビル1F
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phone Card */}
-            <div className="bg-white border-4 border-[#f5b91f] rounded-lg p-6 shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
-              <div className="flex items-start gap-4">
-                <div className="bg-[#f5b91f] p-4 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-black mb-2" style={{ fontWeight: 900, fontSize: '1.125rem' }}>
-                    電話番号
-                  </h3>
-                  <p className="text-black text-xl" style={{ fontWeight: 900 }}>
-                    03-1234-5678
-                  </p>
-                  <p className="text-black/60 text-sm mt-1" style={{ fontWeight: 500 }}>
-                    予約・お問い合わせ受付中
+                    〒085-0058<br />
+                    北海道釧路市愛国東3丁目1-16
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Hours Card */}
-            <div className="bg-white border-4 border-[#58c6ca] rounded-lg p-6 shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+            <div className="bg-white border-4 border-[#f5b91f] rounded-lg p-6 shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
               <div className="flex items-start gap-4">
-                <div className="bg-[#58c6ca] p-4 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                <div className="bg-[#f5b91f] p-4 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)]">
                   <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -82,49 +77,66 @@ export function Location() {
                   <div className="space-y-2">
                     <div className="bg-[#ff0000] text-white px-3 py-2 rounded-lg border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)]">
                       <div className="flex justify-between items-center">
-                        <span style={{ fontWeight: 700 }}>ランチタイム</span>
-                        <span style={{ fontWeight: 900 }}>11:00 - 15:00</span>
+                        <span style={{ fontWeight: 700 }}>営業時間</span>
+                        <span style={{ fontWeight: 900 }}>11:00 ~ 19:00</span>
                       </div>
                     </div>
                     <div className="flex justify-between text-black/70" style={{ fontWeight: 500 }}>
-                      <span>ディナータイム</span>
-                      <span className="text-black" style={{ fontWeight: 700 }}>17:00 - 22:00</span>
-                    </div>
-                    <div className="text-sm text-[#ff0000] mt-3 bg-[#ff0000]/10 p-2 rounded border-2 border-[#ff0000]" style={{ fontWeight: 700 }}>
-                      ※ 定休日: 火曜日
+                      <span>ラストオーダー</span>
+                      <span className="text-black" style={{ fontWeight: 700 }}>18:30</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* SNS Card */}
+            <div className="bg-white border-4 border-[#58c6ca] rounded-lg p-6 shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+              <h3 className="text-black mb-4" style={{ fontWeight: 900, fontSize: '1.125rem' }}>
+                SNS
+              </h3>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="https://www.instagram.com/gather_1206/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-[#ff0000] hover:text-[#cc0000] transition-colors"
+                  style={{ fontWeight: 700 }}
+                >
+                  <div className="bg-[#ff0000] p-2 rounded-lg border-2 border-black">
+                    <Instagram className="w-5 h-5 text-white" />
+                  </div>
+                  @gather_1206
+                </a>
+                <a
+                  href="https://www.tiktok.com/@gather_kushiro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-[#ff0000] hover:text-[#cc0000] transition-colors"
+                  style={{ fontWeight: 700 }}
+                >
+                  <div className="bg-[#f5b91f] p-2 rounded-lg border-2 border-black">
+                    <TikTokIcon className="w-5 h-5 text-white" />
+                  </div>
+                  @gather_kushiro
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Map Placeholder */}
+          {/* Google Map Embed */}
           <div className="relative">
             <div className="bg-white border-8 border-black rounded-lg overflow-hidden h-full min-h-[400px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-              <div className="absolute inset-0 flex items-center justify-center bg-white">
-                <div className="text-center space-y-4">
-                  <MapPin className="w-16 h-16 text-[#ff0000] mx-auto" />
-                  <p className="text-black" style={{ fontWeight: 900, fontSize: '1.25rem' }}>
-                    Google Maps
-                  </p>
-                  <div className="bg-white px-6 py-4 rounded-lg border-4 border-[#58c6ca] shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                    <p className="text-black mb-2" style={{ fontWeight: 700 }}>
-                      🚶 アクセス
-                    </p>
-                    <p className="text-black/70 text-sm" style={{ fontWeight: 500 }}>
-                      渋谷駅から徒歩5分<br />
-                      表参道駅から徒歩8分
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Decorative Dots - Black */}
-              <div className="absolute inset-0 opacity-5" style={{
-                backgroundImage: 'radial-gradient(circle, #000 2px, transparent 2px)',
-                backgroundSize: '30px 30px'
-              }}></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.0!2d144.3905!3d43.0015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f72400000000000%3A0x0!2z5YyX5rW36YGT6Yej6Lev5biC5oSb5Zu95p2xM-S4geebrjEtMTY!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '400px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Gather 店舗所在地"
+              ></iframe>
             </div>
 
             {/* Decorative Corner Badges */}
@@ -138,19 +150,34 @@ export function Location() {
         {/* CTA Section */}
         <div className="mt-16 text-center bg-gradient-to-r from-[#ff0000] to-[#f5b91f] rounded-lg p-8 border-8 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)]">
           <h3 className="text-2xl md:text-3xl text-white mb-4" style={{ fontWeight: 900 }}>
-            🍔 ランチタイムは特にお得！ 🍔
+            こだわりのホットドッグをどうぞ！
           </h3>
           <p className="text-white/90 mb-6" style={{ fontWeight: 700 }}>
-            ランチセット（ドリンク＋サイド付き）がお得な価格で楽しめます。<br />
+            11:00 ~ 19:00 (L.O 18:30) 営業中<br />
             お気軽にお越しください！
           </p>
-          <a
-            href="tel:03-1234-5678"
-            className="inline-block px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
-            style={{ fontWeight: 900 }}
-          >
-            📞 03-1234-5678
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.instagram.com/gather_1206/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              style={{ fontWeight: 900 }}
+            >
+              <Instagram className="w-5 h-5" />
+              Instagram
+            </a>
+            <a
+              href="https://www.tiktok.com/@gather_kushiro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              style={{ fontWeight: 900 }}
+            >
+              <TikTokIcon className="w-5 h-5" />
+              TikTok
+            </a>
+          </div>
         </div>
       </div>
     </section>

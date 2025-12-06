@@ -70,28 +70,22 @@ export function Hero({ onNavigate }: HeroProps = {}) {
           クラシックな味と80年代の雰囲気
         </p>
 
-        {/* Lunch Special Badge */}
+        {/* Business Hours Badge */}
         <div className="mb-10 inline-block bg-[#f5b91f] text-white px-8 py-3 rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] transform -rotate-1">
-          <p className="text-sm" style={{ fontWeight: 700 }}>🍔 ランチタイム特別営業中！</p>
-          <p className="text-2xl" style={{ fontWeight: 900 }}>11:00 - 15:00</p>
+          <p className="text-sm" style={{ fontWeight: 700 }}>OPEN</p>
+          <p className="text-2xl" style={{ fontWeight: 900 }}>11:00 ~ 19:00</p>
+          <p className="text-sm" style={{ fontWeight: 500 }}>L.O 18:30</p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* CTA Button */}
+        <div className="flex justify-center items-center">
           <Button
             onClick={() => onNavigate?.('menu')}
             className="px-8 py-6 bg-[#ff0000] hover:bg-[#cc0000] text-white border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
             style={{ fontWeight: 900 }}
           >
-            ランチメニューを見る
+            メニューを見る
           </Button>
-          <a
-            href="tel:03-1234-5678"
-            className="px-8 py-6 bg-white hover:bg-gray-50 text-black border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px] inline-flex items-center justify-center rounded-md"
-            style={{ fontWeight: 900 }}
-          >
-            📞 電話する
-          </a>
         </div>
 
         {/* Decorative Elements */}
