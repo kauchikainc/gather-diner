@@ -67,7 +67,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto" style={{ fontWeight: 600 }}>
             写真映え×ガツンと旨いホットドッグ店
           <br />
-            80'sアメリカン空間
+            80'sアメリカ空間
         </p>
 
         {/* Business Hours Badge */}
