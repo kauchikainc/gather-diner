@@ -132,7 +132,7 @@ export function Location() {
           <div className="relative">
             <div className="bg-white border-8 border-black rounded-lg overflow-hidden h-full min-h-[400px] shadow-[8px_8px_0px_rgba(0,0,0,1)]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.0!2d144.3905!3d43.0015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f72400000000000%3A0x0!2z5YyX5rW36YGT6Yej6Lev5biC5oSb5Zu95p2xM-S4geebrjEtMTY!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                src="https://maps.google.com/maps?q=北海道釧路市愛国東3丁目1-16&output=embed&hl=ja"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '400px' }}

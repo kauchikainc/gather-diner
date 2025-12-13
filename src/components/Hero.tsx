@@ -46,7 +46,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         {/* Retro Badge */}
         <div className="mb-8 inline-block">
           <div className="relative bg-[#ff0000] text-white px-6 py-2 rounded-full border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] transform rotate-3">
-            <span style={{ fontWeight: 900 }}>Since 1985</span>
+            <span style={{ fontWeight: 900 }}>Since 2025</span>
           </div>
         </div>
 
@@ -65,9 +65,9 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         </div>
 
         <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto" style={{ fontWeight: 600 }}>
-          本物のアメリカンドリームの味を体験しよう
+            写真映え×ガツンと旨いホットドッグ店
           <br />
-          クラシックな味と80年代の雰囲気
+            80'sアメリカン空間
         </p>
 
         {/* Business Hours Badge */}
@@ -91,15 +91,15 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         {/* Decorative Elements */}
         <div className="mt-16 flex justify-center gap-4 md:gap-8 px-4">
           <div className="text-center bg-white px-4 py-4 md:px-6 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-1 max-w-[120px] md:max-w-none">
-            <div className="text-2xl md:text-3xl text-[#ff0000]" style={{ fontWeight: 900 }}>40年</div>
-            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>伝統の味</div>
+            <div className="text-xl md:text-xl text-[#ff0000]" style={{ fontWeight: 900 }}>80's</div>
+            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>アメリカンの味</div>
           </div>
           <div className="text-center bg-white px-4 py-4 md:px-6 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-1 max-w-[120px] md:max-w-none">
-            <div className="text-2xl md:text-3xl text-[#f5b91f]" style={{ fontWeight: 900 }}>100%</div>
-            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>ビーフ</div>
+            <div className="text-xl md:text-xl text-[#f5b91f]" style={{ fontWeight: 900 }}>パリッ</div>
+            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>ソーセージ</div>
           </div>
           <div className="text-center bg-white px-4 py-4 md:px-6 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-1 max-w-[120px] md:max-w-none">
-            <div className="text-2xl md:text-3xl text-[#58c6ca]" style={{ fontWeight: 900 }}>毎日</div>
+            <div className="text-xl md:text-xl text-[#58c6ca]" style={{ fontWeight: 900 }}>毎日</div>
             <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>新鮮食材</div>
           </div>
         </div>
