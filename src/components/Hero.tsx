@@ -92,7 +92,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
         <div className="mt-16 flex justify-center gap-4 md:gap-8 px-4">
           <div className="text-center bg-white px-4 py-4 md:px-6 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-1 max-w-[120px] md:max-w-none">
             <div className="text-xl md:text-xl text-[#ff0000]" style={{ fontWeight: 900 }}>80's</div>
-            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>アメリカンの味</div>
+            <div className="text-xs md:text-sm text-black" style={{ fontWeight: 700 }}>アメリカの味</div>
           </div>
           <div className="text-center bg-white px-4 py-4 md:px-6 rounded-lg border-4 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-1 max-w-[120px] md:max-w-none">
             <div className="text-xl md:text-xl text-[#f5b91f]" style={{ fontWeight: 900 }}>パリッ</div>
