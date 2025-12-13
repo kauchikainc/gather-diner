@@ -31,7 +31,7 @@ export function Hero({ onNavigate }: HeroProps = {}) {
       {/* Background Image with Strong Overlay */}
       <div className="absolute inset-0 z-0 opacity-10">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1758558304634-c3f55ba89137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFzc2ljJTIwYW1lcmljYW4lMjBkaW5lcnxlbnwxfHx8fDE3NjIyMjIwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="/images/logo.png"
           alt="American Diner"
           className="w-full h-full object-cover grayscale"
         />
@@ -52,15 +52,12 @@ export function Hero({ onNavigate }: HeroProps = {}) {
 
         {/* Logo and Main Title */}
         <div className="mb-6 flex flex-col items-center">
-          <img
-            src="/images/logo.png"
-            alt="Gather Logo"
-            className="h-32 md:h-40 w-auto mb-6"
-          />
-          <h1 className="text-6xl md:text-8xl mb-4 tracking-wider">
-            <span className="inline-block text-[#ff0000] transform -rotate-2 drop-shadow-[6px_6px_0px_rgba(245,185,31,1)]" style={{ fontWeight: 900, textShadow: '6px 6px 0px #f5b91f' }}>
-              Gather
-            </span>
+          <h1>
+            <img
+              src="/images/logo-text.png"
+              alt="Gather"
+              className="h-64 md:h-40 w-auto"
+            />
           </h1>
         </div>
 
@@ -70,18 +67,19 @@ export function Hero({ onNavigate }: HeroProps = {}) {
             80'sアメリカ空間
         </p>
 
-        {/* Business Hours Badge */}
-        <div className="mb-10 inline-block bg-[#f5b91f] text-white px-8 py-3 rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] transform -rotate-1">
-          <p className="text-sm" style={{ fontWeight: 700 }}>OPEN</p>
-          <p className="text-2xl" style={{ fontWeight: 900 }}>11:00 ~ 19:00</p>
-          <p className="text-sm" style={{ fontWeight: 500 }}>L.O 18:30</p>
-        </div>
+        {/* Business Hours Badge & CTA Button */}
+        <div className="mb-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+          {/* Business Hours Badge */}
+          <div className="bg-[#f5b91f] text-white px-8 py-2 rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] transform -rotate-1 text-center">
+            <p className="text-sm" style={{ fontWeight: 700 }}>OPEN</p>
+            <p className="text-2xl" style={{ fontWeight: 900 }}>11:00 ~ 19:00</p>
+            <p className="text-sm" style={{ fontWeight: 500 }}>L.O 18:30</p>
+          </div>
 
-        {/* CTA Button */}
-        <div className="flex justify-center items-center">
+          {/* CTA Button */}
           <Button
             onClick={() => onNavigate?.('menu')}
-            className="px-8 py-6 bg-[#ff0000] hover:bg-[#cc0000] text-white border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+            className="px-8 py-6 bg-[#ff0000] hover:bg-[#cc0000] text-white text-2xl rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px] rotate-1 h-auto"
             style={{ fontWeight: 900 }}
           >
             メニューを見る
