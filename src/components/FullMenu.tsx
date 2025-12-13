@@ -1,12 +1,29 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
+import { Phone, Instagram } from "lucide-react";
+
+// TikTokアイコンコンポーネント
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+    </svg>
+  );
+}
 
 // ホットドッグメニュー（画像あり）
 const hotDogs = [
   {
     id: 1,
     name: "レギュラードッグ",
-    description: "シンプルなホットドッグ。ケチャップ＆マスタード",
+    description: "シンプルなホットドッグ\n新鮮シャキッと玉ねぎ",
     setPrice: "¥500",
     singlePrice: "¥300",
     image: "/images/regular_dog.jpg",
@@ -15,7 +32,7 @@ const hotDogs = [
   {
     id: 2,
     name: "サルサチーズドッグ",
-    description: "スパイシーなサルサソースととろけるチーズ",
+    description: "辛味を抑えたスパイシーなサルサソースと\nとろけるチーズ",
     setPrice: "¥950",
     singlePrice: "¥750",
     image: "/images/salsa_cheese_dog.jpg",
@@ -24,7 +41,7 @@ const hotDogs = [
   {
     id: 3,
     name: "テリヤキドッグ",
-    description: "甘辛テリヤキソースと特製マヨネーズ",
+    description: "甘辛テリヤキソースの中に\n炒めたシャキシャキ食感の玉ねぎ",
     setPrice: "¥790",
     singlePrice: "¥590",
     image: "/images/teriyaki_dog.jpg"
@@ -32,7 +49,7 @@ const hotDogs = [
   {
     id: 4,
     name: "チリミートドッグ",
-    description: "スパイシーなチリミートをたっぷりトッピング",
+    description: "辛さを抑えた肉感MAXチリミートの上に\nとろけるチーズ",
     setPrice: "¥950",
     singlePrice: "¥750",
     image: "/images/chili_meat_dog.jpg",
@@ -41,7 +58,7 @@ const hotDogs = [
   {
     id: 5,
     name: "コールスロードッグ",
-    description: "さっぱりコールスローでヘルシーに",
+    description: "野菜の食感あふれる\nヘルシーコールスロー",
     setPrice: "¥790",
     singlePrice: "¥590",
     image: "/images/coleslaw_dog.jpg"
@@ -49,7 +66,7 @@ const hotDogs = [
   {
     id: 6,
     name: "HLTドッグ",
-    description: "ハム・レタス・トマトの王道トリオ",
+    description: "ハム・レタス・トマトの王道トリオに\n選べる2種のソース",
     setPrice: "¥850",
     singlePrice: "¥650",
     image: "/images/hlt_dog.jpg"
@@ -57,7 +74,7 @@ const hotDogs = [
   {
     id: 7,
     name: "アボカドドッグ",
-    description: "クリーミーなアボカドとフレッシュ野菜",
+    description: "クリーミーなアボカドと\nフレッシュ野菜",
     setPrice: "¥990",
     singlePrice: "¥790",
     image: "/images/avocado_dog.jpg",
@@ -65,8 +82,8 @@ const hotDogs = [
   },
   {
     id: 8,
-    name: "ナツミドッグ",
-    description: "店長おすすめの特製ドッグ",
+    name: "ベジドッグ",
+    description: "野菜たっぷり\n食べ応えのあるヘルシードッグ",
     setPrice: "¥990",
     singlePrice: "¥790",
     image: "/images/natsumi_dog.jpg",
@@ -78,17 +95,18 @@ const hotDogs = [
 const drinks = [
   { id: 101, name: "コーラ", price: "¥200" },
   { id: 102, name: "ジンジャーエール", price: "¥200" },
-  { id: 103, name: "烏龍茶", price: "¥200" },
-  { id: 104, name: "アップル", price: "¥200" },
-  { id: 105, name: "オレンジ", price: "¥200" },
-  { id: 106, name: "緑茶", price: "¥200" }
+  { id: 103, name: "アップル", price: "¥200" },
+  { id: 104, name: "オレンジ", price: "¥200" },
+  { id: 105, name: "緑茶", price: "¥200" },
+  { id: 106, name: "烏龍茶", price: "¥200" },
 ];
 
 // サイドメニュー（画像なし）
 const sides = [
   { id: 201, name: "ポテト", price: "¥300", note: "+50円でシャカシャカ変更" },
   { id: 202, name: "ナゲット", price: "¥300" },
-  { id: 203, name: "コールスロー", price: "¥300" }
+  { id: 203, name: "コールスロー", price: "¥300" },
+  { id: 204, name: "マッケンチーズ", price: "¥300" },
 ];
 
 // トッピング（画像なし）
@@ -139,7 +157,7 @@ function HotDogItem({ item }: HotDogItemProps) {
         <h3 className="text-black mb-2" style={{ fontWeight: 900, fontSize: '1.25rem' }}>
           {item.name}
         </h3>
-        <p className="text-black/70 text-sm mb-4" style={{ fontWeight: 500 }}>
+        <p className="text-black/70 text-sm mb-4" style={{ fontWeight: 500, whiteSpace: 'pre-line' }}>
           {item.description}
         </p>
 
@@ -158,36 +176,6 @@ function HotDogItem({ item }: HotDogItemProps) {
         {/* Decorative Line */}
         <div className="mt-4 h-2 w-full bg-gradient-to-r from-[#ff0000] via-[#f5b91f] to-[#58c6ca]"></div>
       </div>
-    </div>
-  );
-}
-
-// シンプルなメニューアイテム（画像なし）
-interface SimpleItemProps {
-  item: {
-    id: number;
-    name: string;
-    price: string;
-    note?: string;
-  };
-}
-
-function SimpleItem({ item }: SimpleItemProps) {
-  return (
-    <div className="flex justify-between items-center py-3 border-b-2 border-black/10 last:border-b-0">
-      <div>
-        <span className="text-black" style={{ fontWeight: 700, fontSize: '1rem' }}>
-          {item.name}
-        </span>
-        {item.note && (
-          <span className="text-[#58c6ca] text-sm ml-2" style={{ fontWeight: 500 }}>
-            ({item.note})
-          </span>
-        )}
-      </div>
-      <span className="text-[#ff0000]" style={{ fontWeight: 900, fontSize: '1rem' }}>
-        {item.price}
-      </span>
     </div>
   );
 }
@@ -269,7 +257,14 @@ export function FullMenu() {
               </p>
               <div>
                 {sides.map((item) => (
-                  <SimpleItem key={item.id} item={item} />
+                  <div key={item.id} className="py-2 text-center">
+                    <span className="text-black" style={{ fontWeight: 600 }}>{item.name}</span>
+                    {item.note && (
+                      <span className="text-[#58c6ca] text-sm block mt-1" style={{ fontWeight: 500 }}>
+                        ({item.note})
+                      </span>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -306,21 +301,31 @@ export function FullMenu() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
+              href="tel:070-3223-3485"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              style={{ fontWeight: 900 }}
+            >
+              <Phone className="w-5 h-5" />
+              070-3223-3485
+            </a>
+            <a
               href="https://www.instagram.com/gather_1206/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
               style={{ fontWeight: 900 }}
             >
+              <Instagram className="w-5 h-5" />
               Instagram
             </a>
             <a
               href="https://www.tiktok.com/@gather_kushiro"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
               style={{ fontWeight: 900 }}
             >
+              <TikTokIcon className="w-5 h-5" />
               TikTok
             </a>
           </div>

@@ -1,4 +1,4 @@
-import { MapPin, Clock, Instagram } from "lucide-react";
+import { MapPin, Clock, Instagram, Phone } from "lucide-react";
 
 // TikTokアイコンコンポーネント
 function TikTokIcon({ className }: { className?: string }) {
@@ -161,6 +161,14 @@ export function Location() {
             お気軽にお越しください！
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:070-3223-3485"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-[#ff0000] rounded-lg border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all transform hover:translate-x-[-2px] hover:translate-y-[-2px]"
+              style={{ fontWeight: 900 }}
+            >
+              <Phone className="w-5 h-5" />
+              070-3223-3485
+            </a>
             <a
               href="https://www.instagram.com/gather_1206/"
               target="_blank"
